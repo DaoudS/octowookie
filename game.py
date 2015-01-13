@@ -9,7 +9,6 @@ def main():
     pacman_image = pygame.image.load("sprites/pacman-small.png")
     screen.blit(pacman_image, (10, 10))
 
-    pygame.draw.circle(screen, (255, 0, 0), (320, 240), 100, 1)
     pygame.display.update()
 
     while True:
