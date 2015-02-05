@@ -33,24 +33,9 @@ class Game(object):
                     return False
         return True
     
-    def main_menu(self):
-        menubg = pygame.image.load("res/graphics/menubg.png")
-        screen.blit(background, [0,0])
-
     def main_scene(self):
         background = pygame.image.load("res/graphics/backdrop.jpg")
         screen.blit(background, [0,0])
-
-class Player:
-    def __init__(self):
-        self.x = 0
-        self.y = 0
-        self.skin = pygame.image.load("res/graphics/mfalcon.png").convert_alpha()
-    def move(self):
-        pass
-    
-    def draw(self):
-        screen.blit(skin, [0,0])
 
 if __name__ == '__main__':
     game = Game()
